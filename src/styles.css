@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*FORM*/
+
+.form-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 70%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.form-div-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.form-div-container label{
+    font-size: 1.3em;
+    margin-bottom: .4em;
+}
+
+.form-div-container input, .form-div-container textarea{
+    padding: .6em;
+    color: #777;
+    font-size: 1em;
+}
+
+.form-div-container input::placeholder, .form-div-container textarea::placeholder{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.form-div-container textarea{
+    height: 80px;
+}
+
+input[type="submit"] {
+    background-color: #EFEFEF;
+    border: 2px solid transparent;
+    padding: .6em 1em;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transform: .4s;
+}
+
+input[type="submit"]:hover{
+    color: orange;
+    border-color: orange;
+    background-color: transparent;
+}
